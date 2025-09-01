@@ -28,7 +28,7 @@ const ToastMessage = ({toastMessages,setToastMessages,count})=>{
   </ul>
 }
 
-function App() {
+function Portal() {
   const [toastMessages,setToastMessages]=React.useState([]);
   const [count,setCount]=React.useState(0)
   return (
@@ -45,4 +45,4 @@ function App() {
   )
 }
 
-export default App
+export default Portal
