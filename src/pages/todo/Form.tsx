@@ -85,7 +85,7 @@ const Form = ({ setAppState }: Props) => {
         placeholder="Optional notes"
       />
 
-      <label style={labelStyle}>Priority</label>
+      <label htmlFor='priority' style={labelStyle}>Priority</label>
       <select
         id='priority'
         value={formState.priority}
