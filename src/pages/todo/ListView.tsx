@@ -36,7 +36,6 @@ const ListView = ({ appState, setAppState }: props) => {
   };
   return (
     <div>
-      <p>Lists</p>
       <DragDropContext onDragEnd={handleDragDrop}>
         <Droppable droppableId="list" type="LIST">
           {(provided: any) => {
