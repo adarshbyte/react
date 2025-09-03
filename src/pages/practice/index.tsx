@@ -1,5 +1,6 @@
 import React from "react";
 import delay from "../../utils/delay";
+import retry from "../../utils/retry";
 
 type Comment = {
     text: string,
@@ -40,6 +41,27 @@ const Practice = () => {
       })
     }
   };
+  const fn = async (retries)=>{
+    return new Promise((res,rej)=>{
+        setTimeout(()=>{
+            console.log(retries)
+            if(retries>0){
+                rej('rejected')
+            }else{
+                res('resolved')
+            }
+        },1000);
+    })
+}
+
+  React.useEffect(()=>{
+     (async ()=>{
+        try{
+            await retry(fn,3);
+        }catch(e){
+        }
+     })()
+  })
   return (
     <div>
       <ul>
