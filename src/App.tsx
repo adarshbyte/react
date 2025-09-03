@@ -2,8 +2,8 @@ import './App.css'
 import Notifications from './Notifications';
 import Todo from './pages/todo';
 import Layout from './components/Layout';
-import { Link, Routes,Route } from 'react-router-dom';
-
+import { Routes,Route } from 'react-router-dom';
+import Practice from './pages/practice';
 export default function App() {
 
   return (
@@ -13,6 +13,7 @@ export default function App() {
           <Route index element={<div/>}/>
           <Route path="notification" element={<Notifications/>}/>
           <Route path="todo" element={<Todo/>}/>
+          <Route path="practice" element={<Practice/>}/>
         </Route>
       </Routes>
     </div>

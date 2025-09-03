@@ -8,6 +8,7 @@ const Layout = () => {
         <Link to="/" style={linkStyle}>Home</Link>
         <Link to="/notification" style={linkStyle}>Notification Center</Link>
         <Link to="/todo" style={linkStyle}>Todos</Link>
+        <Link to="/practice" style={linkStyle}>Practice</Link>
       </nav>
       <div style={{ padding: "20px" }}>
         <Outlet />
