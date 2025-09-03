@@ -17,7 +17,7 @@ const Practice = () => {
         return [...prev, {id:tempId,text:commentText}];
       });
       await delay(1000);
-      let realId='realid';
+      let realId='realid'+Date.now().toString();
       setComments(prev=>{
         return prev.map(comment=>{
             if(comment.id===tempId){
