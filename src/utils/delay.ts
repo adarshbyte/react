@@ -1,7 +1,9 @@
 export default async function delay(ms:number){
-    return new Promise((res)=>{
-        setTimeout(() => {
+    let id:number;
+    const promise = new Promise<string>((res)=>{
+        id=window.setTimeout(() => {
             res("resolved")
         }, ms);
     })
+    return {id:id!,promise}
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import delay from "../../utils/delay";
 import retry from "../../utils/retry";
-
+import Debounce from './Debounce';
 type Comment = {
     text: string,
     id: string,
@@ -93,6 +93,7 @@ const Practice = () => {
       >
         {saving ? "Saving..." : "Save"}
       </button>
+      <Debounce/>
     </div>
   );
 };

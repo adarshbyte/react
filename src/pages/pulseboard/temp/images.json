@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Fronalpstock Alps",
+    "url": "https://picsum.photos/id/1018/3840/2160"
+  },
+  {
+    "id": 2,
+    "title": "Taj Mahal Reflection",
+    "url": "https://picsum.photos/id/1015/3840/2160"
+  },
+  {
+    "id": 3,
+    "title": "Mt. Everest Panorama",
+    "url": "https://picsum.photos/id/1016/3840/2160"
+  },
+  {
+    "id": 4,
+    "title": "Louvre Museum at Night",
+    "url": "https://picsum.photos/id/1025/3840/2160"
+  },
+  {
+    "id": 5,
+    "title": "Grand Canyon",
+    "url": "https://picsum.photos/id/1024/3840/2160"
+  },
+  {
+    "id": 6,
+    "title": "Aurora Borealis",
+    "url": "https://picsum.photos/id/1003/3840/2160"
+  },
+  {
+    "id": 7,
+    "title": "Cathedral of Milan",
+    "url": "https://picsum.photos/id/1005/3840/2160"
+  },
+  {
+    "id": 8,
+    "title": "Eiffel Tower",
+    "url": "https://picsum.photos/id/1011/3840/2160"
+  },
+  {
+    "id": 9,
+    "title": "London Bridge",
+    "url": "https://picsum.photos/id/1012/3840/2160"
+  },
+  {
+    "id": 10,
+    "title": "Swiss Alps Lake",
+    "url": "https://picsum.photos/id/1001/3840/2160"
+  }
+]
