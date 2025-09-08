@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
-
+import Toasts from "./Toasts";
+import { Provider } from "react-redux";
+import store from "../store";
 const Layout = () => {
   return (
-    <div>
+    <Provider store={store}>
+      <Toasts/>
       <nav style={navStyle}>
         <Link to="/" style={linkStyle}>Home</Link>
         <Link to="/notification" style={linkStyle}>Notification Center</Link>
@@ -13,7 +16,7 @@ const Layout = () => {
       <div style={{ padding: "20px" }}>
         <Outlet />
       </div>
-    </div>
+    </Provider>
   );
 };
 

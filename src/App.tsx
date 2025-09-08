@@ -7,6 +7,7 @@ import { Routes,Route, Navigate } from 'react-router-dom';
 import Practice from './pages/practice';
 import Dashboard from './pages/pulseboard/Dashboard';
 import SlowImageLoader from './pages/pulseboard/SlowImageLoader';
+import Home from './pages/home';
 
 export default function App() {
 
@@ -14,7 +15,7 @@ export default function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Layout/>}>
-          <Route index element={<div/>}/>
+          <Route index element={<Home/>}/>
           <Route path="notification" element={<React.Suspense fallback={<div>Loading...</div>}>
             <Notifications/>
           </React.Suspense>}/>
