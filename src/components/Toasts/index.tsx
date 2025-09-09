@@ -34,9 +34,7 @@ const Toasts = ()=>{
 export default Toasts;
 
 const toastContainer:React.CSSProperties = {
-    border:"2px solid",
     width:"50vw",
-    height:"100vh",
     top:"0px",
     right:"0px",
     position:"absolute",

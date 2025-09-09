@@ -1,18 +1,9 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
-import { addToast } from '../../store/toastSlice';
-import {getUniqueId} from '../../utils/index';
+import FileUploader from "./components/FileUploader";
 
 const Home = ()=>{
-    const dispatch = useDispatch();
-    React.useEffect(()=>{
-        let id=setInterval(()=>{
-            dispatch(addToast({id:getUniqueId(),msg:'messaeg here'}))
-        },1000)  
-        return ()=>{
-            clearInterval(id)
-        }
-    },[])
-    return <div>test</div>
+   
+    return <div>
+        <FileUploader/>
+    </div>
 }
 export default Home;
