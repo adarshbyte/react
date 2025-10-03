@@ -72,7 +72,7 @@ const subtleText: React.CSSProperties = {
   color: "#5f6368",
 };
 
-const FileUploader: React.FC = () => {
+const FileUploader: React.FC = ({setData}) => {
   const [files, setFiles] = React.useState<File[]>([]);
   const [errors, setErrors] = React.useState<string[]>([]);
   const [isDragging, setIsDragging] = React.useState(false);
